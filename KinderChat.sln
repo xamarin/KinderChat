@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.iOS", "iOS\Kinde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClient", "SharedClient\SharedClient.csproj", "{B4A997C0-D6CF-4872-AC64-3425229BAD51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{59917E97-EEB0-492E-8FCE-3148E98947AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.Console", "Console\KinderChat.Console.csproj", "{59917E97-EEB0-492E-8FCE-3148E98947AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServerClient", "KinderChat.ServerClient\KinderChat.ServerClient.csproj", "{302ACDE4-76E7-47A0-9291-A7D75E263E7B}"
 EndProject
