@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="KinderChat_UAP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KinderChat_UAP"
+    xmlns:locator="using:KinderChat_UAP.Locator">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+            </ResourceDictionary.MergedDictionaries>
+            <locator:ViewModels x:Name="Locator" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

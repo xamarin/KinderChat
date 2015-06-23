@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/keyline_margin"
+    android:paddingBottom="@dimen/keyline_margin"
+    android:layout_height="wrap_content">
+    <kinderchat.CircleImageView
+        android:layout_marginLeft="@dimen/keyline_margin"
+        android:id="@+id/contact_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_photo"
+        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/keyline_margin"
+        android:layout_toRightOf="@id/contact_photo"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/keyline_margin">
+            <TextView
+                android:id="@+id/contact_name"
+                tools:text="Egor Bogatov"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/primaryText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/keyline_margin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+            <TextView
+                android:id="@+id/date"
+                tools:text="2:22pm"
+                android:singleLine="true"
+                android:textColor="@color/secondaryText"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:layout_marginRight="@dimen/keyline_margin"
+            tools:text="Hey! How's it going?"
+            android:ellipsize="end" />
+    </LinearLayout>
+</RelativeLayout>

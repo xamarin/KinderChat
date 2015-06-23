@@ -1,0 +1,24 @@
+﻿@model KinderChatServer.Models.User
+
+@{
+    Layout = null;
+    var name = Model.NickName ?? Model.Email;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kinder Chat User Invite</title>
+</head>
+<body>
+    <div>
+        <h2>Hello (Future) Kinder!</h2>
+        <p>@name has invited you to enjoy the wonders of Kinder Chat!</p>
+        <p>
+            You can also click on <a href="#">this link</a> to check it out!
+        </p>
+    </div>
+</body>
+</html>

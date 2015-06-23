@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinder Chat</string>
+    <string name="welcome_to_kinderchat">Welcome to Kinder Chat</string>
+   	<string name="get_started_welcome">Get started by setting up your profile and staring a conversation with some friends.</string>
+    <!--Login Screen-->
+    <string name="welcome">Welcome</string>
+    <string name="signup">Sign Up</string>
+    <string name="get_started">Get Started</string>
+    <string name="continue_button_title">Continue</string>
+    <string name="input_email_placeholder">Enter your email address</string>
+    <string name="input_mobile_placeholder">Enter you mobile number</string>
+    <string name="code_placeholder">######</string>
+    <string name="use_mobile">Use your mobile number</string>
+    <string name="use_email">Use your email address</string>
+    <string name="save">Save</string>
+    <string name="link_to_parent">Link To Parent</string>
+    <string name="nickname">Nick name</string>
+    <string name="blue">blue</string>
+    <string name="pink">pink</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="have_pin">I already have a pin</string>
+    <!-- Friends -->
+    <string name="add_friend">Add Friend</string>
+    <string name="add_by_email">Add by Email</string>
+    <string name="pick_contact">Pick Contact</string>
+    <string name="enter_email">Enter your friend\'s email:</string>
+
+    <string name="loading">Loading...</string>
+
+    <!--Confirmation Screen-->
+    <string name="description_email_top">We have sent you an email with a confirmation code to the address above.</string>
+    <string name="description_email_bottom">To complete your email verification, please enter the 6-digit code.</string>
+
+	<string name="description_phone_top">We have sent you an SMS with a confirmation code to the number above.</string>
+	<string name="description_phone_bottom">To complete your phone number verification, please enter the 6-digit code.</string>
+</resources>

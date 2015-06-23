@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="KinderChatWorkerRole" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="KinderChat.WorkerRole.SocketServer" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="CommonServiceBusConnectionString" />
+      <Setting name="InternalServiceBusConnectionString" />
+      <Setting name="RedisMessagesConnectionString" />
+      <Setting name="RedisSessionsConnectionString" />
+      <Setting name="Standalone" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Default" protocol="tcp" port="6102" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

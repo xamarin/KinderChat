@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+ <item android:id="@+id/action_link_to_parent"
+        android:title="@string/link_to_parent"
+        android:icon="@drawable/ic_action_content_link"
+        app:showAsAction="always"/>
+
+  <item android:id="@+id/action_save"
+        android:title="@string/save"
+        android:icon="@drawable/ic_action_content_save"
+        app:showAsAction="always"/>
+
+ <item android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+</menu>
+

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Matriarch.FlaggedUsersDetails">
+  <StackLayout Spacing="10">
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+    <ListView x:Name="list"
+           ItemsSource="{Binding UsersGrouped}"
+           IsGroupingEnabled="True"
+           GroupDisplayBinding="{Binding Key}"
+           GroupShortNameBinding="{Binding Key}"
+           HasUnevenRows="True"
+          IsPullToRefreshEnabled="True"
+          RefreshCommand="{Binding LoadUsersCommand}"
+          IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+      <ListView.GroupHeaderTemplate>
+        <DataTemplate>
+          <ViewCell Height="25">
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Padding="5"
+                         BackgroundColor="#3498DB">
+              <Label Text="{Binding Key}" TextColor="White" VerticalOptions="Center"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.GroupHeaderTemplate>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding NickName}" Detail="{Binding Email}"/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

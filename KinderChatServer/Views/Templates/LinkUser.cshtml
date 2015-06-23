@@ -1,0 +1,22 @@
+﻿@model KinderChatServer.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kinder Chat Link User</title>
+</head>
+<body>
+    <div>
+        <h2>Hello Kinder!</h2>
+        <p>To link this email address to your Kinder chat account, simply enter the following code in the Kinder Chat app.</p>
+        <h2>@Model.ConfirmKey</h2>
+    </div>
+</body>
+</html>
+

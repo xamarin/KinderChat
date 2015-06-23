@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="KinderChatWorkerRole" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="KinderChat.WorkerRole.SocketServer">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="CommonServiceBusConnectionString" value="%FILL%" />
+      <Setting name="InternalServiceBusConnectionString" value="%FILL%" />
+      <Setting name="RedisMessagesConnectionString" value="%FILL%" />
+      <Setting name="RedisSessionsConnectionString" value="%FILL%" />
+      <Setting name="Standalone" value="true" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

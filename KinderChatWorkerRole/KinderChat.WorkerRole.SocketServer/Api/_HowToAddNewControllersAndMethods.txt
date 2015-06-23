@@ -1,0 +1,23 @@
+﻿================
+= To add a new controller:
+================
+
+um.. just add here a class inherited from BaseController. That's all.
+declare any _registered_ dependencies in the constructor - it will be instantiated by AutoFac anyway
+
+
+================
+= To add a new API method to any controller:
+================
+
+1) add a method with the following signature:
+
+[ApiMethod]
+(void or XXXResponse) XXX(ISession session, XXXRequest request) //void return type is for unimportant requests like "Is typing.."
+
+XXXResponse and XXXRequest should be created in KinderChat.ServerClient.Entities.Ws.Requests (KinderChat.ServerClient assembly). you can use a code snippet "prr" for it.
+
+2) don't forget to regenerate PROXY classes (KinderChat.ServerClient.Ws.Proxy) on your clients (T4?)
+
+
+

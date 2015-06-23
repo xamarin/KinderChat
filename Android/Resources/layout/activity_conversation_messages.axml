@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:id="@+id/messages_list_view"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:animationCache="false"
+            android:clipToPadding="false" />
+        <TextView
+            android:id="@+id/typing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:textColor="#989898"
+            android:layout_marginLeft="4dp"
+            android:text="Egor is typing..." />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/input_panel"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/attach_button"
+            android:src="@drawable/ic_editor_attach_file"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="send" />
+        <EditText
+            android:id="@+id/input_text"
+            android:height="40dp"
+            android:hint="Message"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/send_button"
+            android:src="@drawable/ic_action_content_send"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="send" />
+    </LinearLayout>
+</LinearLayout>

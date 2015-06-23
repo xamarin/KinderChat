@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16dp">
+    <TextView
+        android:text="@string/get_started"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/secondaryText"
+        android:layout_marginTop="?attr/actionBarSize" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_email_placeholder"
+        android:id="@+id/identifier"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primaryText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        android:id="@+id/nickname"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primaryText" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_button_title"
+        android:id="@+id/continue_button"
+        android:enabled="false"
+        android:background="?attr/selectableItemBackground" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/use_mobile"
+        android:id="@+id/switch_identity"
+        android:background="?attr/selectableItemBackground" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/have_pin"
+        android:id="@+id/have_pin"
+        android:background="?attr/selectableItemBackground" />
+</LinearLayout>

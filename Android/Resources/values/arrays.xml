@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="sections">
+    <item>Chats</item>
+    <item>Friends</item>
+    <item>Profile</item>
+    <item>Points</item>
+  </string-array>
+</resources>

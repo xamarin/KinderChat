@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+open:
+TOOLS/Code Snippet Manager/Import
+
+type:
+prr
+-->
+
+
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>KinderChat Request-Response</Title>
+      <Author>Egorbo</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>prr</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[using System;
+using KinderChat.ServerClient.Entities.Ws.Events;
+
+namespace KinderChat.ServerClient.Entities.Ws.Requests
+{
+    public class $name$Request : BaseRequest
+    {
+    }
+
+    public class $name$Response : BaseResponse
+    {
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

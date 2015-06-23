@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Get colors from: http://www.materialpalette.com/-->
+  <color name="primary">#A0CEFF</color>
+  <color name="primaryDark">#8BB4DF</color>
+  <color name="accent">#2185ED</color>
+  <color name="lightPrimary">#B3E5FC</color>
+  <color name="textIcon">#FFFFFF</color>
+  <color name="primaryText">#646464</color>
+  <color name="secondaryText">#9D9D9D</color>
+  <color name="divider">#B6B6B6</color>
+  <color name="activated_color">#E8E8E8</color>
+
+  <!-- Pink Theme -->
+  <color name="primaryPink">#FFA3DD</color>
+  <color name="primaryDarkPink">#C11A85</color>
+  <color name="accentPink">#ED21A4</color>
+
+  <!-- Tabs -->
+  <color name="selected_tab">#060809</color>
+  <color name="unselected_tab">#2178FF</color>
+  <color name="unselected_tab_pink">#E90096</color>
+</resources>

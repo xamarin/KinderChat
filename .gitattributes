@@ -1,0 +1,3 @@
+# sln, csproj files (and friends) are always CRLF, even on linux
+*.sln text eol=crlf
+*.proj text eol=crlf

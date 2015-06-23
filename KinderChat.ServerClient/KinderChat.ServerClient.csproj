@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{302ACDE4-76E7-47A0-9291-A7D75E263E7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KinderChat.ServerClient</RootNamespace>
+    <AssemblyName>KinderChat.ServerClient</AssemblyName>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>baf9ab0a</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Entities\AdminEntity.cs" />
+    <Compile Include="Ws\Entities\GroupChatParticipant.cs" />
+    <Compile Include="Ws\Entities\GroupInfo.cs" />
+    <Compile Include="Ws\Entities\PublicKeyInfo.cs" />
+    <Compile Include="Ws\Events\GroupChangedNotification.cs" />
+    <Compile Include="Ws\Events\PushedEvent.cs" />
+    <Compile Include="Ws\Exceptions\ConnectionException.cs" />
+    <Compile Include="Ws\Proxy\Base\ConnectionManager.cs" />
+    <Compile Include="Ws\Proxy\Base\ICredentialsProvider.cs" />
+    <Compile Include="Ws\Proxy\GroupChatsService.cs" />
+    <Compile Include="Ws\Proxy\MessagingService.cs" />
+    <Compile Include="Ws\Requests\ChangePublicKeyRequest.cs" />
+    <Compile Include="Ws\Requests\RegistrationRequest.cs" />
+    <Compile Include="Ws\Requests\AuthenticationRequest.cs" />
+    <Compile Include="Ws\Requests\BaseRequest.cs" />
+    <Compile Include="Ws\Requests\ChangeGroupRequest.cs" />
+    <Compile Include="Ws\Requests\AddParticipantsRequest.cs" />
+    <Compile Include="Ws\Requests\GetGroupsRequest.cs" />
+    <Compile Include="Ws\Requests\GroupChangedAcknowledgeRequest.cs" />
+    <Compile Include="Ws\Requests\KickParticipantsRequest.cs" />
+    <Compile Include="Ws\Requests\CreateGroupChatRequest.cs" />
+    <Compile Include="Ws\Requests\GetGroupChatInfoRequest.cs" />
+    <Compile Include="Ws\Events\DeliveryNotification.cs" />
+    <Compile Include="Ws\Events\IncomingMessage.cs" />
+    <Compile Include="Ws\Events\IsTypingNotification.cs" />
+    <Compile Include="Ws\Requests\LeaveGroupRequest.cs" />
+    <Compile Include="Ws\Requests\MessageSeenStatusAcknowledgeRequest.cs" />
+    <Compile Include="Ws\Requests\SendIsTypingRequest.cs" />
+    <Compile Include="Ws\Events\SeenNotification.cs" />
+    <Compile Include="Ws\Requests\MarkMessageAsSeenRequest.cs" />
+    <Compile Include="Ws\Requests\MessageDeliveredStatusAcknowledgeRequest.cs" />
+    <Compile Include="Ws\Requests\MessageReceivedStatusAcknowledgeRequest.cs" />
+    <Compile Include="Ws\Requests\SendMessageRequest.cs" />
+    <Compile Include="Interfaces\IAdminManager.cs" />
+    <Compile Include="Interfaces\IAvatarManager.cs" />
+    <Compile Include="Interfaces\IDeviceRegistrationManager.cs" />
+    <Compile Include="Interfaces\ILiveConnection.cs" />
+    <Compile Include="Interfaces\INotificationManager.cs" />
+    <Compile Include="Interfaces\IUserManager.cs" />
+    <Compile Include="Managers\AdminManager.cs" />
+    <Compile Include="Managers\AvatarManager.cs" />
+    <Compile Include="Managers\DeviceRegistrationManager.cs" />
+    <Compile Include="Managers\NotificationManager.cs" />
+    <Compile Include="Managers\UserManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\AuthResponse.cs" />
+    <Compile Include="Entities\AuthTokens.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Exceptions\LoginFailedException.cs" />
+    <Compile Include="Interfaces\IAuthenticationManager.cs" />
+    <Compile Include="Interfaces\IWebManager.cs" />
+    <Compile Include="Managers\AuthenticationManager.cs" />
+    <Compile Include="Managers\WebManager.cs" />
+    <Compile Include="Tools\EndPoints.cs" />
+    <Compile Include="Entities\Achievement.cs" />
+    <Compile Include="Entities\Flag.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1-beta3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ws\Requests\1.prr.request-response.snippet">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="..\KinderChatWorkerRole\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\KinderChatWorkerRole\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

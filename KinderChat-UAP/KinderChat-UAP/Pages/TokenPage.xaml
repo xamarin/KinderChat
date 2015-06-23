@@ -1,0 +1,36 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="KinderChat_UAP.Pages.TokenPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    DataContext="{Binding Source={StaticResource Locator}, Path=LoginPageVm}"
+    xmlns:local="using:KinderChat_UAP.Pages"
+    xmlns:common="using:KinderChat_UAP.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:KinderChat_UAP.ViewModels"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid>
+            <ScrollViewer ZoomMode="Disabled">
+                <StackPanel VerticalAlignment="Center">
+                    <Image Source="../Assets/Login/Flag_of_the_United_States.png" Margin="25" Height="300"/>
+                    <TextBlock HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}" TextAlignment="Center" TextWrapping="WrapWholeWords"
+                       Text="Kinder Chat"
+                       FontSize="50" Margin="0,0,0,25" VerticalAlignment="Center" />
+                    <StackPanel Width="300">
+                        <TextBox PlaceholderText="Token" Margin="0,0,0,15"
+                         Text="{Binding Token, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                        <Button x:Name="LoginButton" Content="Confirm Device" HorizontalAlignment="Center"
+                        Command="{Binding ClickTokenButtonCommand}" />
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

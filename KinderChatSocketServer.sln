@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "KinderChat.WorkerRole", "KinderChatWorkerRole\KinderChat.WorkerRole.ccproj", "{6517A0C7-2248-46DC-AA8A-AD861A48B78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer\KinderChat.WorkerRole.SocketServer.csproj", "{232AD501-9614-413E-82CA-BFDBFC73D6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServiceBusShared", "KinderChatWorkerRole\KinderChat.ServiceBusShared\KinderChat.ServiceBusShared.csproj", "{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer.ConsoleHost", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer.ConsoleHost\KinderChat.WorkerRole.SocketServer.ConsoleHost.csproj", "{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServerClient", "KinderChat.ServerClient\KinderChat.ServerClient.csproj", "{302ACDE4-76E7-47A0-9291-A7D75E263E7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6674B14E-D7E1-4615-85D7-CC8F11DD2CCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerRole", "WorkerRole", "{5E3266C8-F726-44BE-86B4-88C9B5F6B374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{EA246D46-D628-4D0C-96B1-467CD5861A6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D48E1E1B-4DDA-4512-99DF-D2CB3FE2A907}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302ACDE4-76E7-47A0-9291-A7D75E263E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302ACDE4-76E7-47A0-9291-A7D75E263E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302ACDE4-76E7-47A0-9291-A7D75E263E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302ACDE4-76E7-47A0-9291-A7D75E263E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D} = {EA246D46-D628-4D0C-96B1-467CD5861A6B}
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE} = {5E3266C8-F726-44BE-86B4-88C9B5F6B374}
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E} = {6674B14E-D7E1-4615-85D7-CC8F11DD2CCA}
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10} = {EA246D46-D628-4D0C-96B1-467CD5861A6B}
+		{302ACDE4-76E7-47A0-9291-A7D75E263E7B} = {6674B14E-D7E1-4615-85D7-CC8F11DD2CCA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.WindowsAzure.Autoscaling.5.0.1118.2\lib\NET4;packages\EnterpriseLibrary.WindowsAzure.Autoscaling.5.0.1118.2\DesignTime
+	EndGlobalSection
+EndGlobal

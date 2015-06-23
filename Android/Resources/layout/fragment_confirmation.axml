@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="32dp">
+    <TextView
+        android:id="@+id/text_top"
+        android:text="@string/description_email_top"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/secondaryText" />
+    <TextView
+        android:id="@+id/text_bottom"
+        android:text="@string/description_email_bottom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primaryText" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/code_placeholder"
+        android:id="@+id/pin"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/primaryText"
+        android:maxLength="6" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_button_title"
+        android:id="@+id/continue_button"
+        android:enabled="false"
+        android:background="?attr/selectableItemBackground" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

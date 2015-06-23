@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChatServer", "KinderChatServer\KinderChatServer.csproj", "{23D6F346-1CB8-4F93-BC76-FF3EE9A9C89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.ServiceBusShared", "KinderChatWorkerRole\KinderChat.ServiceBusShared\KinderChat.ServiceBusShared.csproj", "{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer\KinderChat.WorkerRole.SocketServer.csproj", "{232AD501-9614-413E-82CA-BFDBFC73D6AE}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "KinderChat.WorkerRole", "KinderChatWorkerRole\KinderChat.WorkerRole.ccproj", "{6517A0C7-2248-46DC-AA8A-AD861A48B78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinderChat.WorkerRole.SocketServer.ConsoleHost", "KinderChatWorkerRole\KinderChat.WorkerRole.SocketServer.ConsoleHost\KinderChat.WorkerRole.SocketServer.ConsoleHost.csproj", "{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerRole", "WorkerRole", "{7ECCB165-4BB5-40E0-AF2C-35C9CBEA61B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23D6F346-1CB8-4F93-BC76-FF3EE9A9C89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D6F346-1CB8-4F93-BC76-FF3EE9A9C89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D6F346-1CB8-4F93-BC76-FF3EE9A9C89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D6F346-1CB8-4F93-BC76-FF3EE9A9C89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0BE2EB-326D-40E0-99D9-90CAD50FD14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{232AD501-9614-413E-82CA-BFDBFC73D6AE} = {7ECCB165-4BB5-40E0-AF2C-35C9CBEA61B8}
+		{6517A0C7-2248-46DC-AA8A-AD861A48B78D} = {7ECCB165-4BB5-40E0-AF2C-35C9CBEA61B8}
+		{5889BDB8-6CF2-4C2C-A8EA-3FC0D26F4C10} = {7ECCB165-4BB5-40E0-AF2C-35C9CBEA61B8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:gravity="end">
+    <RelativeLayout
+        android:layout_toLeftOf="@id/msg_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="32dp"
+        android:background="@drawable/msg_outgoing"
+        android:layout_marginLeft="0.0dp">
+        <TextView
+            android:id="@+id/msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingBottom="4dp"
+            android:text="Hello world!" />
+        <ImageView
+            android:id="@+id/msg_status"
+            android:layout_below="@id/msg_text"
+            android:layout_alignParentLeft="true"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/msg_status_sending" />
+        <TextView
+            android:id="@+id/msg_timestamp"
+            android:layout_below="@id/msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff6a6a6a"
+            android:textSize="13sp"
+            android:layout_marginLeft="16dp"
+            android:text="2:22 AM" />
+    </RelativeLayout>
+    <kinderchat.CircleImageView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/keyline_margin"
+        android:id="@+id/msg_photo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/default_photo"
+        android:scaleType="fitCenter"
+        android:gravity="bottom"
+        android:layout_gravity="bottom" />
+</RelativeLayout>
