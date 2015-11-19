@@ -24,6 +24,11 @@ slides for this project here:
 
 https://channel9.msdn.com/Events/Build/2015/3-770
 
+You can fast-forward to 8:50 to watch the introduction of Kinder Chat.
+
+[Slides](http://video.ch9.ms/sessions/build/2015/3-770.pptx) or [View online](http://view.officeapps.live.com/op/view.aspx?src=http%3a%2f%2fvideo.ch9.ms%2fsessions%2fbuild%2f2015%2f3-770.pptx)
+
+
 User Experience
 ---------------
 
