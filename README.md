@@ -14,6 +14,8 @@ trust but verify.
 By allowing parents to monitor the conversation of their children with third parties, we can 
 ensure their safety and a more harmonious future for everyone.
 
+![Kinder Chat](Shot.png)
+
 User Experience
 ---------------
 
