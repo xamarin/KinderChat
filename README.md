@@ -3,7 +3,7 @@
 
 <img align="right" src="Shot.png" width="250">
 
-KinderChat is a sample application that we presented at Microsoft Build 2015 in April of 2015.
+KinderChat is an application that we presented at Microsoft Build 2015 in April of 2015.
 
 The goal of this application is to provide a secure chat application for children, where
 all the communications between children are encrypted and yet, parents have a golden key to
