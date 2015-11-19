@@ -16,6 +16,13 @@ trust but verify.
 By allowing parents to monitor the conversation of their children with third parties, we can 
 ensure their safety and a more harmonious future for everyone.
 
+Presentation
+------------
+
+We introduced Kinder Chat at Build 2015, you can watch the video and download the 
+slides for this project here:
+
+https://channel9.msdn.com/Events/Build/2015/3-770
 
 User Experience
 ---------------
