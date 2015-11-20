@@ -3,8 +3,6 @@
 
 <img align="right" src="Shot.png" width="250">
 
-KinderChat is an application that we presented at Microsoft Build 2015 in April of 2015.
-
 The goal of this application is to provide a secure chat application for children, where
 all the communications between children are encrypted and yet, parents have a golden key
 to monitor the communications of their children.
@@ -15,27 +13,6 @@ trust but verify.
 
 By allowing parents to monitor the conversation of their children with third parties, we can 
 ensure their safety and a more harmonious future for everyone.
-
-Presentation
-------------
-
-We introduced Kinder Chat at Build 2015, you can watch the video and download the 
-slides for this project here:
-
-https://channel9.msdn.com/Events/Build/2015/3-770
-
-You can fast-forward to 8:50 to watch the introduction of Kinder Chat.
-
-[Slides](http://video.ch9.ms/sessions/build/2015/3-770.pptx) or [View online](http://view.officeapps.live.com/op/view.aspx?src=http%3a%2f%2fvideo.ch9.ms%2fsessions%2fbuild%2f2015%2f3-770.pptx)
-
-
-User Experience
----------------
-
-The individual clients are written using native code for Android, iOS and Windows.  They should
-provide a good blueprint for how to build native user experiences while sharing code across
-all three platforms.
-
 
 Cryptography and Onboarding Experience
 --------------------------------------
@@ -96,6 +73,13 @@ parents to grant points.
 The Matriarch app is a Windows desktop application dashboard that centralizes the management
 and statistics for the activities performed by their offspring.
 
+User Experience
+---------------
+
+The individual clients are written using native code for Android, iOS and Windows.  They should
+provide a good blueprint for how to build native user experiences while sharing code across
+all three platforms.
+
 Backend
 -------
 
@@ -108,6 +92,20 @@ the ServiceBus to connect the frontends to the backing stores.
 This diagram shows the high-level architecture:
 
 ![KinderChat Backend](KinderChatWorkerRole/KinderChat.WorkerRole.SocketServer/diagram.png)
+
+Presentation
+------------
+
+KinderChat is an application that we presented at Microsoft Build 2015 in April of 2015.
+
+We introduced Kinder Chat at Build 2015, you can watch the video and download the 
+slides for this project here:
+
+https://channel9.msdn.com/Events/Build/2015/3-770
+
+You can fast-forward to 8:50 to watch the introduction of Kinder Chat.
+
+[Slides](http://video.ch9.ms/sessions/build/2015/3-770.pptx) or [View online](http://view.officeapps.live.com/op/view.aspx?src=http%3a%2f%2fvideo.ch9.ms%2fsessions%2fbuild%2f2015%2f3-770.pptx)
 
 Status
 ------
